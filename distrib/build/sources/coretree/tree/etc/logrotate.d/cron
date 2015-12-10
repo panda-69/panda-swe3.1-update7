@@ -1,7 +1,0 @@
-/var/log/cron {
-    missingok
-    notifempty
-    postrotate
-	/bin/kill -HUP `/bin/cat /var/run/crond.pid`
-    endscript
-}
